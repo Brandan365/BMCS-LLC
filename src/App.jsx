@@ -19,6 +19,9 @@ function App() {
     }
   }
   useEffect(() => {
+    setTimeout(()=>{
+      updateHeight()
+    },1000)
     updateHeight()
     window.addEventListener('resize', updateHeight)
     return () => window.removeEventListener('resize', updateHeight)
