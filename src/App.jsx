@@ -102,17 +102,17 @@ function App() {
             COURIER
           </h1>
           <ul className="flex gap-12 font-nunito text-sm font-semibold">
-            <li className="cursor-pointer border-b-2 border-transparent hover:border-white">
-              <a onClick={() => handleClick("home")}>HOME</a>
+            <li className="cursor-pointer relative group">
+              <a className="borderef" onClick={() => handleClick("home")}>HOME</a>
             </li>
-            <li className="cursor-pointer border-b-2 border-transparent hover:border-white">
-              <a onClick={() => handleClick("us")}>WHO WE ARE</a>
+            <li className="cursor-pointer relative group">
+              <a className="borderef" onClick={() => handleClick("us")}>WHO WE ARE</a>
             </li>
-            <li className="cursor-pointer border-b-2 border-transparent hover:border-white">
-              <a onClick={() => handleClick("route")}>HOW WE DO IT</a>
+            <li className="cursor-pointer relative group">
+              <a className="borderef" onClick={() => handleClick("route")}>HOW WE DO IT</a>
             </li>
-            <li className="cursor-pointer border-b-2 border-transparent hover:border-white">
-              <a onClick={() => handleClick("contact")}>CONTACT US</a>
+            <li className="cursor-pointer relative group">
+              <a className="borderef" onClick={() => handleClick("contact")}>CONTACT US</a>
             </li>
           </ul>
         </nav>
@@ -121,20 +121,18 @@ function App() {
             Brandan's Retail Courier Services LLC
           </h1>
           <p className="font-nunito text-xl font-semibold">
-          Is here to provide Fast and Reliable Courier Services at Your Doorstep. "Delivering Packages Safely and On Time, Every Time"
+            Is here to provide Fast and Reliable Courier Services at Your Doorstep. "Delivering Packages Safely and On Time, Every Time"
           </p>
           <div className="my-12">
-      <button
-        onClick={handleGetQuote}
-        className="bg-white text-black px-8 py-3 rounded-lg font-semibold text-lg hover:bg-neutral-200 focus:outline-none"
-      >
-        Get a Quote
-      </button>
-    </div>
+            <button
+              onClick={handleGetQuote}
+              className="relative bg-white text-black px-8 py-3 rounded-lg group font-semibold text-lg hover:text-black focus:outline-none">
+              <h1 className="borderef font-figtree font-semibold">Get a Quote</h1>
+            </button>
+          </div>
         </div>
       </header>
       <main className="font-lora">
-        
         {/* roots */}
         <div id="us" className="grid grid-cols-2">
           <section
@@ -142,7 +140,7 @@ function App() {
             style={{ height: sheight }}
             className="h-[449px] bg-black p-20 *:my-4 text-white"
           >
-            <h1 className="mb-8 text-3xl">Our Roots and future...</h1>
+            <h1 className="mb-8 text-3xl border-b border-yellow-400 w-max">Our Roots and future...</h1>
             <p>
               Our business is committed to growth and expansion. As we look
               forward to 2023 and beyond, we seek new customers who value
@@ -169,13 +167,13 @@ function App() {
           <section ref={imgSec} className="group/ser h-min w-full relative overflow-hidden">
             <img src="courier-two.jpg" className="group-hover/ser:scale-[1.1] delay-200 transition-all ease-in-out" />
             <h1 className="absolute top-0 left-0 text-3xl w-full h-full p-24 backdrop-brightness-75 group-hover/ser:backrop-brightness-50 text-white">As a Courier Service Provider That is Familiar
-            with the Courier Business & Has Experience in it We Offer Services
-            to those who require Pick-Up & Delivery Services for</h1>
+              with the Courier Business & Has Experience in it We Offer Services
+              to those who require Pick-Up & Delivery Services for</h1>
           </section>
           <section
             ref={sibSec}
             style={{ height: sheight }}
-            className="bg-yellow-400 p-12"
+            className="bg-amber-400 p-12"
           >
             <h1 className="flex items-end text-3xl font-semibold">
               We Provide
@@ -270,29 +268,29 @@ function App() {
           </section>
         </div>
         {/* //Certified */}
-        <div className="relative flex h-[240px] flex-col items-center overflow-hidden bg-neutral-950 p-12 text-white">
-          <h1 className="text-2xl">WE ARE CERTIFIED</h1>
+        <div className="relative flex h-[240px] flex-col items-center overflow-hidden bg-neutral-900 p-12 text-white">
+          <h1 className="text-2xl border-b border-b-yellow-400">WE ARE CERTIFIED</h1>
           <div className="m-12 flex animate-infinite-scroll items-center justify-center gap-12 md:justify-start">
             <h1>UPMC-Vendor</h1>
             <h1>Valued-Vendor</h1>
             <h1>TSA-Certified</h1>
           </div>
-          <div className="absolute left-0 top-0 h-full w-[40%] bg-neutral-950 blur-lg filter"></div>
-          <div className="absolute right-0 top-0 h-full w-[40%] bg-neutral-950 blur-lg filter"></div>
+          <div className="absolute left-0 top-0 h-full w-[40%] bg-neutral-900 blur-lg filter"></div>
+          <div className="absolute right-0 top-0 h-full w-[40%] bg-neutral-900 blur-lg filter"></div>
         </div>
         {/* pricing */}
         <div>
-          <PricingSection/>
+          {/* <PricingSection/> */}
         </div>
         {/* testomonials */}
         <div>
-          <TestimonialSection/>
+          <TestimonialSection />
         </div>
         {/* //map */}
         <div id="map" className="grid grid-cols-2 overflow-hidden bg-black relative text-white">
           <div className="absolute top-[-10%] inset-0 bg-gradient-radial"></div>
           <section className="aspect-video p-12">
-            <h1 className="my-8 text-3xl">
+            <h1 className="my-8 text-3xl border-b-2 border-b-yellow-400 w-max py-2">
               Local Support, Anywhere you want..
             </h1>
             <p>
@@ -332,8 +330,8 @@ function App() {
         >
           <section className="flex flex-col items-center justify-center">
             <div>
-            <h1 className="text-4xl font-bold border-b-yellow-400 border-b-2 w-max font-figtree flex items-end gap-2">Contact us</h1>
-            <p className="text-2xl">Don't hesitate to reach out to us!</p>
+              <h1 className="text-4xl font-bold border-b-yellow-400 border-b-2 w-max font-figtree flex items-end gap-2">Contact us</h1>
+              <p className="text-2xl">Don't hesitate to reach out to us!</p>
             </div>
           </section>
           <section className="">
@@ -400,7 +398,7 @@ function App() {
           </section>
         </div>
       </main>
-      <Footer/>
+      <Footer />
     </>
   );
 }

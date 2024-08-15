@@ -13,3 +13,6 @@
 .label{
     @apply mb-2 block w-[90%] translate-x-4 translate-y-[-140%] bg-white font-bold text-neutral-300 transition-all group-hover/f:bg-transparent group-hover/f:w-min group-hover/f:translate-y-[-220%]
 }
+.borderef{
+    @apply relative before:transition-all before:left-[50%] before:delay-150 before:w-0 before:bg-yellow-400 before:h-[2px] before:absolute before:bottom-0 group-hover:before:w-full group-hover:before:left-0
+}

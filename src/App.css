@@ -4,7 +4,7 @@
 }
 
 ::-webkit-scrollbar-track {
-  background: transparent; /* Background of the track */
+  background: #222; /* Background of the track */
   width: 6px;
 }
 
@@ -16,5 +16,22 @@
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: #222; /* Color of the thumb on hover */
+  background: rgb(255, 208, 0); /* Color of the thumb on hover */
 }
+
+/* Custom CSS for the border-bottom hover effect */
+/* Button.css */
+/* button h1::before {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  width: 0;
+  height: 2px;
+  transition: width 0.3s ease, left 0.3s ease;
+}
+
+button:hover h1::before {
+  width: 100%;
+  left: 50%;
+} */

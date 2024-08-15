@@ -28,10 +28,10 @@ const Footer = () => {
           <a href="#" className="hover:text-yellow-400 underline block mb-4">SIGN UP FOR OUR NEWSLETTER →</a>
           <h4 className="font-semibold mb-4">FOLLOW US</h4>
           <div className="flex space-x-4">
-            <a href="#" className="text-white">FaceBook</a>
-            <a href="#" className="text-white">Twitter</a>
-            <a href="#" className="text-white">Instagram</a>
-            <a href="#" className="text-white">LinkedIn</a>
+            <a href="#" className="text-white hover:text-yellow-400">FaceBook</a>
+            <a href="#" className="text-white hover:text-yellow-400">Twitter</a>
+            <a href="#" className="text-white hover:text-yellow-400">Instagram</a>
+            <a href="#" className="text-white hover:text-yellow-400">LinkedIn</a>
           </div>
         </div>
       </div>
