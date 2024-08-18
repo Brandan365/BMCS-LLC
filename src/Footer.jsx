@@ -1,37 +1,58 @@
-// src/components/Footer.jsx
-import React from 'react';
+import React from "react";
 
 const Footer = () => {
   return (
-    <footer className="relative py-12 overflow-hidden">
+    <footer className="relative h-[600px] overflow-hidden py-8 md:h-auto md:py-12">
       <div className="absolute inset-0 bg-black">
-        <div className="absolute top-[-180%] inset-0 bg-gradient-radial"></div>
+        <div className="absolute inset-0 top-[-80%] bg-gradient-radial md:top-[-180%]"></div>
       </div>
-      <div className="relative container mx-auto grid lg:grid-cols-4 sm:grid-cols-2 gap-8 px-8 text-white">
-        <div>
+
+      <div className="relative mx-auto px-8 text-white md:container md:grid md:grid-cols-3 md:grid-rows-1 md:gap-8">
+        <div className="mt-8 md:mt-0">
           <img src="icon-white.png" width={"80px"} alt="" />
-          <h3 className="text-xl font-bold mb-4">The agency for better clients®</h3>
+          <h3 className="mb-4 text-xl font-bold">
+            The agency for better clients®
+          </h3>
         </div>
 
-        <div className='w-min'> 
-          <h4 className="font-semibold mb-4">CAMPHILL</h4>
+        <div className="mt-8 max-w-min text-left text-sm md:mt-0 md:w-min md:text-left md:text-base">
+          <h4 className="mb-2 font-semibold md:mb-4">CAMPHILL</h4>
           <p>Brandan365_@BrandansRetailCourierServicesLLC.Com</p>
-          <p>+1 (717)-439-9685</p>
-          <p>128 32nd Street, Camphill Pa 17011,</p>
-          <p>70 Market Street, Harrisburg Pennsylvania</p>
-          <a href="#map" className="hover:text-yellow-400 underline mt-2 block">SEE ON MAP →</a>
+          <p>
+            {" "}
+            <b>Phone:</b> +1 (717)-439-9685
+          </p>
+          <p>
+            {" "}
+            <b>Adress:</b> 128 32nd Street, Camphill Pa 17011,
+          </p>
+          <p>Camphill Shopping Center, Harrisburg Pennsylvania</p>
+          <a href="#map" className="mt-2 block underline hover:text-yellow-400">
+            SEE ON MAP →
+          </a>
         </div>
 
-
-        <div className="right-0 absolute mr-24">
-          <h4 className="font-semibold mb-4">WANT TO HAVE NEWS OF OFFRES?</h4>
-          <a href="#" className="hover:text-yellow-400 underline block mb-4">SIGN UP FOR OUR NEWSLETTER →</a>
-          <h4 className="font-semibold mb-4">FOLLOW US</h4>
-          <div className="flex space-x-4">
-            <a href="#" className="text-white hover:text-yellow-400">FaceBook</a>
-            <a href="#" className="text-white hover:text-yellow-400">Twitter</a>
-            <a href="#" className="text-white hover:text-yellow-400">Instagram</a>
-            <a href="#" className="text-white hover:text-yellow-400">LinkedIn</a>
+        <div className="px-auto mt-8 w-full text-sm md:absolute md:right-0 md:mr-24 md:mt-0 md:block md:w-auto md:p-0 md:text-base">
+          <h4 className="font-semibold md:mb-4">
+            WANT TO HAVE NEWS OF OFFRES?
+          </h4>
+          <a href="#" className="mb-4 block underline hover:text-yellow-400">
+            SIGN UP FOR OUR NEWSLETTER →
+          </a>
+          <h4 className="mb-2 font-semibold md:mb-4">FOLLOW US</h4>
+          <div className="flex flex-col md:flex-row md:space-x-4">
+            <a href="#" className="text-white hover:text-yellow-400">
+              FaceBook
+            </a>
+            <a href="#" className="text-white hover:text-yellow-400">
+              Twitter
+            </a>
+            <a href="#" className="text-white hover:text-yellow-400">
+              Instagram
+            </a>
+            <a href="#" className="text-white hover:text-yellow-400">
+              LinkedIn
+            </a>
           </div>
         </div>
       </div>

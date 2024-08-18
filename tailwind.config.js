@@ -8,11 +8,12 @@ export default {
         lora: "Lora",
         nunito: "Nunito",
         robot: "Roboto",
-        inter:"Inter Tight",
-        figtree: "Figtree"
+        inter: "Inter Tight",
+        figtree: "Figtree",
       },
       backgroundImage: {
-        'gradient-radial': 'radial-gradient(circle at center, hsla(0, 0%, 50%, 0.2) 20%, transparent 200%)',
+        "gradient-radial":
+          "radial-gradient(circle at center, hsla(0, 0%, 50%, 0.2) 20%, transparent 200%)",
       },
       animation: {
         "infinite-scroll": "infinite-scroll 10s linear infinite",

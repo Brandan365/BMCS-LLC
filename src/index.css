@@ -1,18 +1,18 @@
-@import url('https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&family=Inter+Tight:ital,wght@0,100..900;1,100..900&family=Lora:ital,wght@0,400..700;1,400..700&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&family=Inter+Tight:ital,wght@0,100..900;1,100..900&family=Lora:ital,wght@0,400..700;1,400..700&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
 
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-.card{
-    @apply bg-black flex items-center justify-center rounded-3xl font-bold text-white text-2xl border-2 border-white
+.card {
+  @apply flex items-center justify-center rounded-3xl border-2 border-white bg-black text-2xl font-bold text-white;
 }
-.input{
-    @apply w-full rounded-full border bg-white px-4 py-2 text-black shadow-md focus:outline-none
+.input {
+  @apply w-full rounded-full border bg-white px-4 py-2 text-black shadow-md focus:outline-none;
 }
-.label{
-    @apply mb-2 block w-[90%] translate-x-4 translate-y-[-140%] bg-white font-bold text-neutral-300 transition-all group-hover/f:bg-transparent group-hover/f:w-min group-hover/f:translate-y-[-220%]
+.label {
+  @apply mb-2 block w-[90%] translate-x-4 translate-y-[-140%] bg-white font-bold text-neutral-300 transition-all group-hover/f:w-min group-hover/f:translate-y-[-220%] group-hover/f:bg-transparent;
 }
-.borderef{
-    @apply relative before:transition-all before:left-[50%] before:delay-150 before:w-0 before:bg-yellow-400 before:h-[2px] before:absolute before:bottom-0 group-hover:before:w-full group-hover:before:left-0
+.borderef {
+  @apply relative before:absolute before:bottom-0 before:left-[50%] before:h-[2px] before:w-0 before:bg-yellow-400 before:transition-all before:delay-150 group-hover:before:left-0 group-hover:before:w-full;
 }
