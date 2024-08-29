@@ -1,50 +1,11 @@
 // src/components/TestimonialSection.jsx
 import React, { useEffect, useState } from "react";
-import axios from "axios";
+// import axios from "axios";
 import TestimonialCard from "./TestimonialCard";
-// import { Swiper, SwiperSlide } from 'swiper/react';
-// import { EffectCards } from 'swiper/modules';
+import { Swiper, SwiperSlide } from 'swiper/react';
+import { EffectCards } from 'swiper/modules';
 import "swiper/css";
 import "swiper/css/effect-cards";
-const testimonials = [
-  {
-    name: "Jane Doe",
-    position: "CEO at Company",
-    quote: "This service is amazing! It has changed the way we do business.",
-    image: "https://via.placeholder.com/150",
-  },
-  {
-    name: "John Smith",
-    position: "Manager at Business",
-    quote: "The best decision we ever made was choosing this company!",
-    image: "https://via.placeholder.com/150",
-  },
-  {
-    name: "Sara Wilson",
-    position: "Designer at Creative Co.",
-    quote: "Highly recommend this service to anyone looking for quality.",
-    image: "https://via.placeholder.com/150",
-  },
-  {
-    name: "Sara Wilson",
-    position: "Designer at Creative Co.",
-    quote: "Highly recommend this service to anyone looking for quality.",
-    image: "https://via.placeholder.com/150",
-  },
-  {
-    name: "Sara Wilson",
-    position: "Designer at Creative Co.",
-    quote: "Highly recommend this service to anyone looking for quality.",
-    image: "https://via.placeholder.com/150",
-  },
-  {
-    name: "Sara Wilson",
-    position: "Designer at Creative Co.",
-    quote: "Highly recommend this service to anyone looking for quality.",
-    image: "https://via.placeholder.com/150",
-  },
-];
-
 const reviews = [
   {
     author_name: "Christine Lynne",
@@ -120,6 +81,19 @@ const reviews = [
 ];
 
 const TestimonialSection = () => {
+  const [isMobile, setIsMobile] = useState(false);
+
+  // Effect to check screen width and update the isMobile state
+  useEffect(() => {
+    const handleResize = () => {
+      setIsMobile(window.innerWidth <= 768); // Set breakpoint for mobile at 768px
+    };
+
+    window.addEventListener('resize', handleResize);
+    handleResize(); // Initial check
+
+    return () => window.removeEventListener('resize', handleResize);
+  }, []);
   // const [reviews, setReviews] = useState([]);
   // useEffect(() => {
   //   const fetchReviews = async () => {
@@ -151,22 +125,41 @@ const TestimonialSection = () => {
           d="M0,32L48,32C96,32,192,32,288,42.7C384,53,480,75,576,117.3C672,160,768,224,864,224C960,224,1056,160,1152,149.3C1248,139,1344,181,1392,202.7L1440,224L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"
         ></path>
       </svg>
-      <h2 className="mx-auto mb-8 mt-12 w-max border-b-2 border-b-yellow-400 text-center font-figtree text-2xl font-bold text-gray-900 md:text-4xl">
+      <h2 className="mx-auto mb-8 mt-12 w-[260px] md:w-auto border-b-2 border-b-yellow-400 text-center font-figtree text-3xl font-bold text-gray-900 md:text-4xl">
         What Our Clients are Saying
       </h2>
-      <div className="my-16 grid grid-cols-1 gap-8 md:my-24 md:grid-cols-3">
-        {/* bottom change */}
-        {reviews.map((testimonial, index) => (
-          <TestimonialCard key={index} testimonial={testimonial} />
-        ))}
-      </div>
+      {isMobile ? (
+        // Swiper component for mobile view
+        <Swiper
+        effect={'cards'}
+                grabCursor={true}
+                modules={[EffectCards]}
+                className="max-w-sm mb-12 mySwiper"
+        >
+          {reviews.map((testimonial, index) => (
+            <SwiperSlide key={index}>
+              <TestimonialCard testimonial={testimonial} />
+            </SwiperSlide>
+          ))}
+        </Swiper>
+      ) : (
+        // Grid layout for desktop view
+        <div className="grid grid-cols-1 gap-8 md:grid-cols-3">
+          {reviews.map((testimonial, index) => (
+            <TestimonialCard key={index} testimonial={testimonial} />
+          ))}
+        </div>
+      )}
     </div>
   );
 };
 
 export default TestimonialSection;
-{/* grid gap-8 lg:grid-cols-3 md:grid-cols-2 sm:grid-cols-1 */}
-        {/* <Swiper
+{
+  /* grid gap-8 lg:grid-cols-3 md:grid-cols-2 sm:grid-cols-1 */
+}
+{
+  /* <Swiper
         effect={'cards'}
                 grabCursor={true}
                 modules={[EffectCards]}
@@ -177,4 +170,5 @@ export default TestimonialSection;
               <TestimonialCard testimonial={testimonial} />
             </SwiperSlide>
           ))}
-        </Swiper> */}
+        </Swiper> */
+}

@@ -4,12 +4,12 @@
 }
 
 ::-webkit-scrollbar-track {
-  background: #222; /* Background of the track */
+  background: #111; /* Background of the track */
   width: 6px;
 }
 
 ::-webkit-scrollbar-thumb {
-  background: black; /* Color of the thumb */ /* Rounded corners */
+  background: #fff; /* Color of the thumb */ /* Rounded corners */
   max-height: 50px;
   margin: 1px;
   width: 4px;
@@ -18,7 +18,13 @@
 ::-webkit-scrollbar-thumb:hover {
   background: rgb(255, 208, 0); /* Color of the thumb on hover */
 }
+.gm-style > div > div > a[href*="maps/about/"] {
+  display: none !important;
+}
 
+.gm-style > div > div > a[href*="support.google.com"] {
+  display: none !important;
+}
 /* Custom CSS for the border-bottom hover effect */
 /* Button.css */
 /* button h1::before {

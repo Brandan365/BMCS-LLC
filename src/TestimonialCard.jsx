@@ -4,10 +4,9 @@ import StarRating from "./StarRating";
 const TestimonialCard = ({ testimonial }) => {
   return (
     <div
-      className={` ${testimonial.span} relative mx-auto max-w-sm rounded-lg bg-white p-6 shadow-lg transition-transform hover:scale-[1.1]`}
+      className={` ${testimonial.span} relative mx-auto md:h-auto max-w-sm rounded-lg bg-white p-6 shadow-lg transition-transform md:hover:scale-[1.1]`}
     >
-      {/* <div className="absolute top-[-10%] text-center aspect-square w-[36px] h-[36px] bg-yellow-400 text-6xl text-white font-bold">"</div> */}
-      <p className="mb-4 max-h-[12P0px] overflow-hidden text-base text-gray-700">
+      <p className="mb-4 max-h-[120px] md:max-h-max overflow-hidden text-base text-gray-700">
         "{testimonial.text}"
       </p>
       <div className="flex items-center">

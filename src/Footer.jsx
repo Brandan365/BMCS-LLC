@@ -1,5 +1,10 @@
 import React from "react";
-
+import {
+  FaFacebook,
+  FaTwitter,
+  FaInstagram,
+  FaLinkedinIn
+} from "react-icons/fa";
 const Footer = () => {
   return (
     <footer className="relative h-[600px] overflow-hidden py-8 md:h-auto md:py-12">
@@ -10,7 +15,7 @@ const Footer = () => {
       <div className="relative mx-auto px-8 text-white md:container md:grid md:grid-cols-3 md:grid-rows-1 md:gap-8">
         <div className="mt-8 md:mt-0">
           <img src="icon-white.png" width={"80px"} alt="" />
-          <h3 className="mb-4 text-xl font-bold">
+          <h3 className="mb-4 text-3xl font-bold">
             The agency for better clients®
           </h3>
         </div>
@@ -40,21 +45,27 @@ const Footer = () => {
             SIGN UP FOR OUR NEWSLETTER →
           </a>
           <h4 className="mb-2 font-semibold md:mb-4">FOLLOW US</h4>
-          <div className="flex flex-col md:flex-row md:space-x-4">
-            <a href="#" className="text-white hover:text-yellow-400">
-              FaceBook
+          <div className="flex space-x-4">
+            <a href="#" className="text-white text-3xl hover:text-yellow-400">
+              <FaFacebook/>
             </a>
-            <a href="#" className="text-white hover:text-yellow-400">
-              Twitter
+            <a href="#" className="text-white text-3xl hover:text-yellow-400">
+              <FaTwitter/>
             </a>
-            <a href="#" className="text-white hover:text-yellow-400">
-              Instagram
+            <a href="#" className="text-white text-3xl hover:text-yellow-400">
+              <FaInstagram/>
             </a>
-            <a href="#" className="text-white hover:text-yellow-400">
-              LinkedIn
+            <a href="#" className="text-white text-3xl hover:text-yellow-400">
+              <FaLinkedinIn/>
             </a>
           </div>
         </div>
+      </div>
+      <div className="absolute bottom-0 left-[50%] w-full translate-x-[-50%] text-center">
+        <p className="text-sm text-white">
+          &copy; {new Date().getFullYear()} Brandan's Courier. All rights
+          reserved.
+        </p>
       </div>
     </footer>
   );
