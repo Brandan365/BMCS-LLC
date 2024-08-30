@@ -9,7 +9,7 @@ const ContactSection = () => {
   return (
     <section className="relative group md:px-16 md:py-28 px-6 py-8 bg-black overflow-hidden">
       {/* Background overlay */}
-      <div className="absolute inset-0 group-hover:scale-[1.05] transition-transform bg-[url(courier-one.jpg)] bg-cover bg-center opacity-75"></div>
+      <div style={{ backgroundImage: `url('courier-one.jpg')`}} className="absolute inset-0 group-hover:scale-[1.05] transition-transform bg-cover bg-center opacity-75"></div>
 
       {/* Container */}
       <div className="container mx-auto flex flex-col lg:flex-row items-center justify-between relative z-10">
