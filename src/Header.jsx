@@ -101,8 +101,8 @@ export default function Header() {
               </a>
             </li>
             <li className="group relative cursor-pointer">
-              <a className="borderef" onClick={() => handleClick("route")}>
-                HOW WE DO IT
+              <a className="borderef" onClick={() => handleClick("service")}>
+                OUR SERVICES
               </a>
             </li>
             <li className="group relative cursor-pointer">

@@ -125,7 +125,7 @@ const TestimonialSection = () => {
           d="M0,32L48,32C96,32,192,32,288,42.7C384,53,480,75,576,117.3C672,160,768,224,864,224C960,224,1056,160,1152,149.3C1248,139,1344,181,1392,202.7L1440,224L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"
         ></path>
       </svg>
-      <h2 className="mx-auto mb-8 mt-12 w-[260px] md:w-auto border-b-2 border-b-yellow-400 text-center font-figtree text-3xl font-bold text-gray-900 md:text-4xl">
+      <h2 className="mx-auto mb-8 mt-12 w-[260px] md:w-max border-b-2 border-b-yellow-400 text-center font-figtree text-3xl font-bold text-gray-900 md:text-4xl">
         What Our Clients are Saying
       </h2>
       {isMobile ? (

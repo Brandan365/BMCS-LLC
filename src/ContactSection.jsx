@@ -17,7 +17,7 @@ const ContactSection = () => {
         {/* Left Column: Heading and Description */}
         <div className="w-full lg:w-1/2 px-4 mb-8 lg:mb-0">
           <div className="max-w-md mx-auto lg:max-w-full">
-            <h2 className="text-xl w-2/6 md:text-3xl font-bold text-white mb-4 border-b-2 border-yellow-400 pb-2">
+            <h2 className="text-xl w-2/6 md:w-5/6 md:text-3xl font-bold text-white mb-4 border-b-2 border-yellow-400 pb-2">
               Are You Tired of Not Having Peace of Mind When Sending Your Shipments?
             </h2>
             <p className="text-white">

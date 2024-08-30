@@ -66,16 +66,16 @@ function HomePage() {
           </section>
         </div>
         {/* services */}
-        <div className="overflow-hidden md:grid md:grid-cols-2">
+        <div id ="service" className="overflow-hidden md:grid md:grid-cols-2">
           <section
             ref={imgSec}
             className="group/ser relative h-min w-full overflow-hidden"
           >
             <img
               src="courier-two.jpg"
-              className="transition-all delay-200 ease-in-out group-hover/ser:scale-[1.1]"
+              className="transition-all delay-200 ease-in-out group-hover/ser:scale-[1.05] opacity-[90%]"
             />
-            <h1 className="group-hover/ser:backrop-brightness-50 absolute left-0 top-0 h-full w-full p-12 text-xl text-white backdrop-brightness-75 md:p-24 md:text-3xl">
+            <h1 className="group-hover/ser:backrop-brightness-50 absolute left-0 top-0 h-full w-full p-12 text-xl text-white md:p-24 md:text-3xl">
               As a Courier Service Provider That is Familiar with the Courier
               Business & Has Experience in it We Offer Services to those who
               require Pick-Up & Delivery Services for...
