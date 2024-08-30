@@ -60,7 +60,7 @@ const FactSection = () => {
   return (
     <section ref={sectionRef} className="relative px-16 py-28  bg-white">
       {/* Background overlay */}
-      <div style={{ backgroundImage: `url('courier-one.jpg')`}} className="absolute inset-0 bg-cover bg-center opacity-75"></div>
+      <div style={{ backgroundImage: `url('courier-three.jpg')`}} className="absolute inset-0 bg-cover bg-center opacity-75"></div>
 
 
       {/* Container */}
