@@ -64,7 +64,7 @@ const FactSection = () => {
 
 
       {/* Container */}
-      <div className="container mx-auto relative text-white z-10 px-4">
+      <div className="container mx-auto relative text-white px-4">
         <div className="flex flex-wrap -mx-4">
           {funFacts.map((fact, index) => (
             <div key={index} className="w-full md:w-1/4 px-4 mb-8 md:mb-0">

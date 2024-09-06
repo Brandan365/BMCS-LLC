@@ -23,9 +23,6 @@ import "swiper/css/grid";
 import "swiper/css/pagination";
 // import required modules
 import { Grid, Pagination, Autoplay } from "swiper/modules";
-// import { FreeMode, Scrollbar, Mousewheel } from 'swiper/modules';
-import Footer from "./Footer";
-import Header from "./Header";
 const services = [
   {
     name: "Lab Specimens",
@@ -146,7 +143,8 @@ const ServicePage = () => {
             d="M0,32L48,32C96,32,192,32,288,42.7C384,53,480,75,576,117.3C672,160,768,224,864,224C960,224,1056,160,1152,149.3C1248,139,1344,181,1392,202.7L1440,224L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"
           ></path>
         </svg> */}
-        <div className="container mx-auto px-4">
+        <div className="
+         mx-auto px-4">
           <h1 className="mx-auto md:w-[460px] p-2 border-b-2 border-yellow-400 text-3xl md:text-center font-figtree md:text-4xl font-bold text-gray-900">
           We Simply Remove The Headache From Logistics
           </h1>
@@ -158,7 +156,7 @@ const ServicePage = () => {
             grid={{
               rows: 2,
             }}
-            spaceBetween={18}
+            spaceBetween={2}
             pagination={{
               clickable: true,
               dynamicBullets: true,

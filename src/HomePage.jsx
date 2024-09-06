@@ -1,14 +1,19 @@
-import { useState, useEffect, useRef } from "react";
+import React, {useState, useEffect, useRef, Suspense } from "react";
 import { MapContainer, TileLayer, Marker, Popup } from "react-leaflet";
 import "leaflet/dist/leaflet.css";
 import "./App.css";
-import TestimonialSection from "./TestimonialSection";
-import Footer from "./Footer";
-import Header from "./Header";
-import Contact from "./Contact";
-import ServicePage from "./ServicePage";
-import ContactSection from "./ContactSection";
-import FactSection from "./FactSection";
+const TestimonialSection = React.lazy(() => import('./TestimonialSection'));
+const Footer = React.lazy(() => import('./Footer'));
+const Header = React.lazy(() => import('./Header'));
+const Contact = React.lazy(() => import('./Contact'));
+const ServicePage = React.lazy(() => import('./ServicePage'));
+const ContactSection = React.lazy(() => import('./ContactSection'));
+const FactSection = React.lazy(() => import('./FactSection'));
+const LoadingSpinner = () => (
+  <div className="flex justify-center items-center h-screen">
+    <div className="animate-spin rounded-full h-16 w-16 border-t-4 border-yellow-500 border-opacity-75"></div>
+  </div>
+);
 function HomePage() {
   const imgSec = useRef(null);
   const sibSec = useRef(null);
@@ -32,6 +37,7 @@ function HomePage() {
 
   return (
     <>
+    <Suspense fallback={<LoadingSpinner/>}>
       <Header />
       <main className="font-lora">
         {/* roots */}
@@ -249,6 +255,7 @@ function HomePage() {
         <Contact />
       </main>
       <Footer />
+      </Suspense>
     </>
   );
 }
