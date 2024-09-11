@@ -1,14 +1,16 @@
 import React, {useState, useEffect, useRef, Suspense } from "react";
 import { MapContainer, TileLayer, Marker, Popup } from "react-leaflet";
 import "leaflet/dist/leaflet.css";
-import "./App.css";
-delete L.Icon.Default.prototype._getIconUrl;
+import L from "leaflet";
 
-L.Icon.Default.mergeOptions({
-  iconRetinaUrl: require('leaflet/dist/images/marker-icon-2x.png'),
-  iconUrl: require('leaflet/dist/images/marker-icon.png'),
-  shadowUrl: require('leaflet/dist/images/marker-shadow.png'),
+// Define your custom SVG icon
+const customIcon = new L.Icon({
+  iconUrl: "map.svg",
+  iconSize: [32, 32], // Adjust size as needed
+  iconAnchor: [16, 32], // Adjust anchor as needed
+  popupAnchor: [0, -32] // Adjust popup anchor as needed
 });
+import "./App.css";
 const TestimonialSection = React.lazy(() => import('./TestimonialSection'));
 const Footer = React.lazy(() => import('./Footer'));
 const Header = React.lazy(() => import('./Header'));
@@ -250,7 +252,7 @@ function HomePage() {
                 url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
                 attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
               />
-              <Marker position={[40.234936, -76.935199]}>
+              <Marker position={[40.234936, -76.935199]} icon={customIcon}>
                 <Popup>
                   We are here. <br /> Come visit us.
                 </Popup>
