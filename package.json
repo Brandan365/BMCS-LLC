@@ -3,13 +3,17 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
+  "main": "server.js",
+  "engines":{
+    "node":"14.x"
+  },
   "scripts": {
     "devs": "concurrently \"npm run server\" \"npm run dev\"",
     "dev": "vite",
     "devh": "vite --host",
     "build": "vite build",
     "preview": "vite preview",
-    "start": "node server/server.js"
+    "start": "node server.js"
   },
   "dependencies": {
     "@headlessui/react": "^2.1.2",
