@@ -2,6 +2,13 @@ import React, {useState, useEffect, useRef, Suspense } from "react";
 import { MapContainer, TileLayer, Marker, Popup } from "react-leaflet";
 import "leaflet/dist/leaflet.css";
 import "./App.css";
+delete L.Icon.Default.prototype._getIconUrl;
+
+L.Icon.Default.mergeOptions({
+  iconRetinaUrl: require('leaflet/dist/images/marker-icon-2x.png'),
+  iconUrl: require('leaflet/dist/images/marker-icon.png'),
+  shadowUrl: require('leaflet/dist/images/marker-shadow.png'),
+});
 const TestimonialSection = React.lazy(() => import('./TestimonialSection'));
 const Footer = React.lazy(() => import('./Footer'));
 const Header = React.lazy(() => import('./Header'));
@@ -245,7 +252,7 @@ function HomePage() {
               />
               <Marker position={[40.234936, -76.935199]}>
                 <Popup>
-                  A pretty CSS3 popup. <br /> Easily customizable.
+                  We are here. <br /> Come visit us.
                 </Popup>
               </Marker>
             </MapContainer>

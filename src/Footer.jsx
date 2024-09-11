@@ -85,7 +85,7 @@ const Footer = () => {
             SIGN UP FOR OUR NEWSLETTER →
           </a>
           {showForm && (
-        <form onSubmit={handleSubmit} className="email-form flex items-center justify-center fixed top-2/4 left-2/4 -translate-y-2/4 w-full h-full backdrop-blur-lg -translate-x-2/4">
+        <form onSubmit={handleSubmit} className="email-form flex items-center justify-center fixed top-2/4 left-2/4 -translate-y-2/4 w-full h-full backdrop-brightness-50 -translate-x-2/4">
           <div className="flex border-2 justify-between rounded-full border-black p-1 w-[326px] overflow-hidden">
           <input
             type="email"
@@ -103,13 +103,13 @@ const Footer = () => {
       )}
           <h4 className="mb-2 font-semibold md:mb-4">FOLLOW US</h4>
           <div className="flex space-x-4">
-            <a href="#" className="text-white text-3xl md:text-xl hover:text-yellow-400">
+            <a href="https://www.facebook.com/p/Brandans-Retail-Courier-Services-LLC-100089234058920/" className="text-white text-3xl md:text-xl hover:text-yellow-400">
               <FaFacebook/>
             </a>
-            <a href="#" className="text-white text-3xl md:text-xl hover:text-yellow-400">
+            <a href="https://www.tiktok.com/@brandon365_" className="text-white text-3xl md:text-xl hover:text-yellow-400">
               <FaTwitter/>
             </a>
-            <a href="#" className="text-white text-3xl md:text-xl hover:text-yellow-400">
+            <a href="https://www.tiktok.com/@brandon365_" className="text-white text-3xl md:text-xl hover:text-yellow-400">
               <FaTiktok/>
             </a>
           </div>

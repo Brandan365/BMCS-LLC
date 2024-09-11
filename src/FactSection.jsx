@@ -9,7 +9,7 @@ import {
 // Fun facts data array
 const funFacts = [
   { icon: <FaTruck/>, number: 10000, title: 'Shipments' },
-  { icon: <FaCity/> , number: 12, title: 'Cities' },
+  { icon: <FaCity/> , number: 6, title: 'States' },
   { icon: < FaRegCalendarAlt />, number: 5, title: 'Years of Experience' },
   { icon: <FaHeadset/>, number: 24, title: 'Operations' },
 ];
