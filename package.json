@@ -11,6 +11,9 @@
     "preview": "vite preview",
     "start": "node server/server.js"
   },
+  "engines": {
+    "node": "22.x"
+  },
   "dependencies": {
     "@headlessui/react": "^2.1.2",
     "@react-google-maps/api": "^2.19.3",
