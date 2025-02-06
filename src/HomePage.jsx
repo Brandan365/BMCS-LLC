@@ -230,7 +230,7 @@ function HomePage() {
             <p>
               At Brandan's Retail Courier Services LLC, we're more than just a
               delivery service — we're your local partner. Conveniently located
-              at 28 32nd Street, Camphill, PA 17011, in the Camphill Shopping
+              at 128 S 32nd Street, Camphill, PA 17011, in the Camphill Shopping
               Center, Harrisburg, Pennsylvania, we're ready to meet your courier
               needs with speed and reliability. Whether you’re shipping locally
               or need something delivered across town, our team is here to

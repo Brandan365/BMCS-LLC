@@ -69,7 +69,7 @@ const Footer = () => {
           </p>
           <p>
             {" "}
-            <b>Adress:</b> 128 32nd Street, Camphill Pa 17011,
+            <b>Adress:</b> 128 S 32nd Street, Camphill Pa 17011,
           </p>
           <p>Camphill Shopping Center, Harrisburg Pennsylvania</p>
           <a href="#map" className="mt-2 block underline hover:text-yellow-400">

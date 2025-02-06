@@ -26,3 +26,11 @@
   display: none !important;
 }
 
+
+.swiper-slide {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 18px;
+  color: #fff;
+}
