@@ -11,7 +11,7 @@ const customIcon = new L.Icon({
   popupAnchor: [0, -32] // Adjust popup anchor as needed
 });
 // import "./App.css";
-const TestimonialSection = React.lazy(() => import('./TestimonialSection'));
+const TestimonialSection = React.lazy(() => import('../components/TestimonialSection'));
 const Footer = React.lazy(() => import('../components/Footer'));
 const Header = React.lazy(() => import('../components/Header'));
 const Contact = React.lazy(() => import('../components/Contact'));

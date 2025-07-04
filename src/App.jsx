@@ -3,7 +3,7 @@ import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import './App.css';
 import 'leaflet/dist/leaflet.css';
 import Home from './pages/home';
-const HomePage = React.lazy(() => import('./pages/HomePage'));
+// const HomePage = React.lazy(() => import('./pages/HomePage'));
 function App() {
   return (
     <Router>
