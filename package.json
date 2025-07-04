@@ -15,8 +15,10 @@
     "node": "22.x"
   },
   "dependencies": {
+    "@emailjs/browser": "^4.4.1",
     "@headlessui/react": "^2.1.2",
-    "@react-google-maps/api": "^2.19.3",
+    "@mapbox/polyline": "^1.2.1",
+    "@react-google-maps/api": "^2.20.7",
     "axios": "^1.7.4",
     "body-parser": "^1.20.2",
     "cors": "^2.8.5",

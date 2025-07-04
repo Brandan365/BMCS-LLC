@@ -12,12 +12,12 @@ const customIcon = new L.Icon({
 });
 import "./App.css";
 const TestimonialSection = React.lazy(() => import('./TestimonialSection'));
-const Footer = React.lazy(() => import('./Footer'));
-const Header = React.lazy(() => import('./Header'));
-const Contact = React.lazy(() => import('./Contact'));
+const Footer = React.lazy(() => import('../components/Footer'));
+const Header = React.lazy(() => import('../components/Header'));
+const Contact = React.lazy(() => import('../components/Contact'));
 const ServicePage = React.lazy(() => import('./ServicePage'));
-const ContactSection = React.lazy(() => import('./ContactSection'));
-const FactSection = React.lazy(() => import('./FactSection'));
+const ContactSection = React.lazy(() => import('../components/ContactSection'));
+const FactSection = React.lazy(() => import('../components/FactSection'));
 const LoadingSpinner = () => (
   <div className="flex justify-center items-center h-screen">
     <div className="animate-spin rounded-full h-16 w-16 border-t-4 border-yellow-500 border-opacity-75"></div>

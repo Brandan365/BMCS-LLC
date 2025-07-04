@@ -2,7 +2,8 @@ import React, { Suspense } from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import './App.css';
 import 'leaflet/dist/leaflet.css';
-const HomePage = React.lazy(() => import('./HomePage'));
+import Home from './pages/home';
+const HomePage = React.lazy(() => import('./pages/HomePage'));
 function App() {
   return (
     <Router>
@@ -12,7 +13,7 @@ function App() {
         </div>
       }>
         <Routes>
-          <Route path="/" element={<HomePage />} />
+          <Route path="/" element={<Home />} />
         </Routes>
       </Suspense>
     </Router>

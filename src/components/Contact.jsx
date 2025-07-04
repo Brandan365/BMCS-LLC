@@ -1,48 +1,41 @@
-import React from "react";
-import { useState } from "react";
+import React, { useState } from "react";
+import emailjs from '@emailjs/browser';
+
 export default function Contact() {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [message, setMessage] = useState("");
   const [status, setStatus] = useState("");
-  //form function
+
   const handleSubmit = async (e) => {
     e.preventDefault();
     setStatus("Sending...");
 
-    const formData = {
-      name,
-      email,
-      message,
-    };
-    //http://localhost:3000:change it to backend link
     try {
-      const response = await fetch("/api/send", {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
+      await emailjs.send(
+        'service_nig4r8h',
+        'template_3026419',
+        {
+          from_name: name,
+          from_email: email,
+          message: message,
         },
-        body: JSON.stringify(formData),
-      });
+        'gvkL8XJM_SwIpdp67'
+      );
 
-      if (response.ok) {
-        setStatus("Message sent successfully!");
-        setName("");
-        setEmail("");
-        setMessage("");
-      } else {
-        setStatus("Failed to send message. Please try again.");
-      }
+      setStatus("Message sent successfully!");
+      setName("");
+      setEmail("");
+      setMessage("");
     } catch (error) {
       console.error("Error:", error);
       setStatus("An error occurred. Please try again later.");
     }
   };
+
+  // Rest of your component remains the same
   return (
-    <div
-      id="contact"
-      className="grid-cols-2 bg-gray-50 font-nunito text-neutral-950 md:grid"
-    >
+    <div id="contact" className="grid-cols-2 bg-gray-50 font-nunito text-neutral-950 md:grid">
       <section className="flex-col items-center justify-center p-12 md:flex md:p-0">
         <div>
           <h1 className="flex w-max items-end gap-2 border-b-2 border-b-yellow-400 font-figtree text-4xl font-bold">
