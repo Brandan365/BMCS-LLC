@@ -62,16 +62,16 @@ const Footer = () => {
 
         <div className="mt-8 max-w-min text-left text-sm md:mt-0 md:w-min md:text-left md:text-base">
           <h4 className="mb-2 font-semibold md:mb-4">CAMPHILL</h4>
-          <p>Brandan365_@BrandansRetailCourierServicesLLC.Com</p>
+          <p>bmcsllcemployer@gmail.com</p>
           <p>
             {" "}
-            <b>Phone:</b> +1 (717)-439-9685
+            <b>Phone:</b> +1 (215)-540-6539
           </p>
           <p>
             {" "}
             <b>Adress:</b> 128 S 32nd Street, Camphill Pa 17011,
           </p>
-          <p>Camphill Shopping Center, Harrisburg Pennsylvania</p>
+          <p>Camphill Shopping Center</p>
           <a href="#map" className="mt-2 block underline hover:text-yellow-400">
             SEE ON MAP →
           </a>

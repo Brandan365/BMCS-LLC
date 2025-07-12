@@ -119,7 +119,7 @@ export default function Header() {
         </h1>
         <p className="font-nunito text-xl font-semibold">
           Is here to provide Fast and Reliable Courier Services at Your
-          Doorstep. "Delivering Packages Safely and On Time, Every Time"
+          Doorstep. "Delivering Packages Safely and On Time."
         </p>
         <div className="my-12 flex justify-center md:block">
           <button
