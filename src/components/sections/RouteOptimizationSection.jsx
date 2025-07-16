@@ -1,7 +1,12 @@
 // src/components/sections/RouteOptimizationSection.jsx
 import React from 'react';
+// Import the content.json file
+import content from '../../content.json'; // Adjust path based on your file structure
 
 export default function RouteOptimizationSection() {
+  // Destructure the routeOptimizationSection content
+  const { routeOptimizationSection } = content;
+
   return (
     <section id="route" className="grid grid-cols-1 md:grid-cols-2">
       {/* Text Content */}
@@ -11,14 +16,13 @@ export default function RouteOptimizationSection() {
           src="mapd.png" // Ensure this image is in your public folder
           alt="Route optimization icon"
         />
+        {/* Use title from content.json */}
         <h2 className="py-6 text-3xl font-bold text-gray-900 md:py-8 md:text-4xl">
-          Route Optimization
+          {routeOptimizationSection.title}
         </h2>
+        {/* Use description from content.json */}
         <p className="font-nunito text-lg text-gray-700">
-          In today's fast-paced world, efficient delivery is crucial. Our
-          cutting-edge technology analyzes traffic, locations, and vehicle
-          capacity to create optimal delivery routes, unlocking maximum
-          efficiency and minimizing costs for you.
+          {routeOptimizationSection.description}
         </p>
       </div>
 

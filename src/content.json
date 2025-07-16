@@ -1,0 +1,158 @@
+{
+  "header": {
+    "brandName": "BRANDAN'S COURIER",
+    "hero": {
+      "headline": "Brandan's Retail Courier Services LLC",
+      "tagline": "Is here to provide Fast and Reliable Courier Services at Your Doorstep. 'Delivering Packages Safely and On Time. now'"
+    }
+  },
+  "aboutSection": {
+    "title": "Our Roots and Future...",
+    "paragraph1": "With a strong foundation established in 2021, we bring a wealth of experience to the courier industry. Our expertise allows us to provide top-notch pickup and delivery solutions for a wide range of clients.",
+    "paragraph2": "Our business is committed to growth and expansion. As we look forward, we seek new customers who value reliable and efficient courier services."
+  },
+  "servicesSection": {
+    "introText": "Familiar with the courier business, we offer pick-up & delivery for...",
+    "servicesList": [
+      "Lab Specimens",
+      "Pharma Runs",
+      "Clinics",
+      "Letters & Documents",
+      "Hospitals",
+      "Doctors Offices",
+      "Stat Medical Equipment",
+      "Airport Cargo/Baggage",
+      "UPMC Pinnacle",
+      "Logistics",
+      "Same-day Courier",
+      "Delivery Services",
+      "Luggage Delivery",
+      "On-Demand Courier",
+      "Nursing Homes",
+      "Route Delivery",
+      "Local & Wide Area",
+      "Stat Runs",
+      "International Courier",
+      "Sterile Processes"
+    ]
+  },
+  "contactSection": {
+    "headline": "Are You Tired of Having Peace of Mind When Sending Your Shipments?",
+    "description": "Your logistics headaches have ended because Brandan's Courier Services will give you the peace of mind you are looking for when sending your precious time-critical or temperature-sensitive shipments from anywhere to anywhere."
+  },
+  "routeOptimizationSection": {
+    "title": "Route Optimization",
+    "description": "In today's fast-paced world, efficient delivery is crucial. Our cutting-edge technology analyzes traffic, locations, and vehicle capacity to create optimal delivery routes, unlocking maximum efficiency and minimizing costs for you."
+  },
+  "certifiedSection": {
+    "title": "WE ARE CERTIFIED",
+    "certifications": [
+      "UPMC-Vendor",
+      "Valued-Vendor",
+      "TSA-Certified"
+    ]
+  },
+  "testimonialSection": {
+    "title": "What Our Customers Say",
+    "testimonials": [
+      {
+        "quote": "Brandan's Courier is incredibly reliable. They always deliver on time, and their communication is top-notch. Highly recommend!",
+        "author": "Jane Doe",
+        "position": "Logistics Manager"
+      },
+      {
+        "quote": "Exceptional service! Our packages always arrive safely, and their team is very professional. A truly trusted partner.",
+        "author": "John Smith",
+        "position": "Small Business Owner"
+      },
+      {
+        "quote": "Their attention to detail for temperature-sensitive shipments is unmatched. Peace of mind every single time.",
+        "author": "Emily White",
+        "position": "Pharmacy Director"
+      }
+    ]
+  },
+  "factSection": {
+    "title": "Our Achievements",
+    "facts": [
+      { "number": 1000, "title": "Shipments", "suffix": "+" },
+      { "number": 6, "title": "States", "suffix": "+" },
+      { "number": 5, "title": "Years of Experience", "suffix": "" },
+      { "number": 24, "title": "Operations", "suffix": "/7" }
+    ]
+  },
+  "locationMapSection": {
+    "title": "Local Support, Anywhere You Want..",
+    "description": "Conveniently located at 128 S 32nd Street, Camphill, PA, we're your local partner ready to meet your courier needs with speed and reliability."
+  },
+  "contactForm": {
+    "title": "Contact us",
+    "tagline": "Don't hesitate to reach out to us!",
+    "nameLabel": "Name",
+    "emailLabel": "Email",
+    "messageLabel": "Message",
+    "sendButton": "Send Message",
+    "sendingStatus": "Sending...",
+    "successStatus": "Message sent successfully!",
+    "errorStatus": "An error occurred. Please try again later."
+  },
+  "footer": {
+    "tagline": "The agency for better clients®",
+    "camphillDetails": {
+      "heading": "CAMPHILL",
+      "email": "bmcsllcemployer@gmail.com",
+      "phone": "+1 (215)-540-6539",
+      "addressLine1": "128 S 32nd Street, Camphill Pa 17011,",
+      "addressLine2": "Camphill Shopping Center"
+    },
+    "newsletter": {
+      "heading": "WANT TO HAVE NEWS OF OFFERS?",
+      "callToAction": "SIGN UP FOR OUR NEWSLETTER →",
+      "placeholder": "Enter your email",
+      "submitButton": "Submit",
+      "successAlert": "Thank you for signing up!"
+    },
+    "followUs": "FOLLOW US",
+    "socialMedia": [
+      {"platform": "Facebook", "url": "https://www.facebook.com/p/Brandans-Retail-Courier-Services-LLC-100089234058920/", "icon": "FaFacebook"},
+      {"platform": "Twitter", "url": "https://twitter.com/YourTwitter", "icon": "FaTwitter"},
+      {"platform": "TikTok", "url": "https://www.tiktok.com/@brandon365_", "icon": "FaTiktok"}
+    ],
+    "copyright": "© {{year}} Brandan's Courier. All rights reserved."
+  },
+  "mapComponent": {
+    "quoteCalculatorTitle": "Quote Calculator",
+    "instructionText": {
+      "step1": "Click on the map to set your pickup location.",
+      "step2": "Excellent. Now, click to set your drop-off location.",
+      "step3": "Route calculated! Please provide package details below.",
+      "step4": "Almost there! Confirm your details to place the order.",
+      "success": {
+        "title": "Order Sent!",
+        "message": "Thank you! We've received your request and will be in touch shortly to finalize the details."
+      }
+    },
+    "errors": {
+      "weightRequired": "Please enter a package weight.",
+      "contactDetailsRequired": "Please enter your name and phone number."
+    },
+    "labels": {
+      "weight": "Weight (kg)",
+      "size": "Size",
+      "name": "Your Name",
+      "phone": "Phone Number",
+      "totalDistance": "Total Distance:"
+    },
+    "buttons": {
+      "calculatePrice": "Calculate Price",
+      "confirmOrder": "Confirm & Send Order",
+      "startOver": "Start Over",
+      "viewRoute": "View Route on Google Maps"
+    },
+    "packageSizes": {
+      "small": "Small",
+      "medium": "Medium",
+      "large": "Large"
+    }
+  }
+}

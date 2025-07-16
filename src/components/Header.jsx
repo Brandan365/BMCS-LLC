@@ -1,9 +1,15 @@
 import { useState } from "react";
 import { Transition } from "@headlessui/react";
 import MapComponent from "./MapComponent";
+// Import the content.json file
+import content from "../content.json";
+
 export default function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isQuoteModalOpen, setIsQuoteModalOpen] = useState(false);
+
+  // Destructure relevant content from the imported JSON
+  const { header, mapComponent } = content;
 
   const handleMenuToggle = () => {
     setIsMenuOpen(!isMenuOpen);
@@ -43,7 +49,8 @@ export default function Header() {
             className="h-6 w-6 md:h-10 md:w-10"
             alt="icon"
           />{" "}
-          BRANDAN'S COURIER
+          {/* Use brandName from content.json */}
+          {header.brandName}
         </h1>
 
         {/* Hamburger Icon for small screens */}
@@ -114,18 +121,21 @@ export default function Header() {
         </Transition>
       </nav>
       <div className="mx-6 md:mx-0 md:mt-48 md:w-4/6">
+        {/* Use hero headline from content.json */}
         <h1 className="my-12 text-4xl md:my-8 md:text-6xl">
-          Brandan's Retail Courier Services LLC
+          {header.hero.headline}
         </h1>
+        {/* Use hero tagline from content.json */}
         <p className="font-nunito text-xl font-semibold">
-          Is here to provide Fast and Reliable Courier Services at Your
-          Doorstep. "Delivering Packages Safely and On Time."
+          {header.hero.tagline}
         </p>
         <div className="my-12 flex justify-center md:block">
           <button
             onClick={handleGetQuote}
             className="group relative self-center rounded-lg bg-white px-8 py-3 text-lg font-semibold text-black hover:text-black focus:outline-none"
           >
+            {/* The "Get a Quote" text can also be made dynamic if needed, but it's very generic for now.
+                For example, you could add mapComponent.buttons.getQuote or similar */}
             <h1 className="borderef font-figtree font-semibold">Get a Quote</h1>
           </button>
         </div>
@@ -143,8 +153,9 @@ export default function Header() {
       >
         <div className="w-full max-w-lg overflow-y-scroll p-6 shadow-lg">
           <div className="flex justify-between">
+            {/* Use quoteCalculatorTitle from content.json */}
             <h2 className="mb-4 w-max border-b-2 border-yellow-400 text-xl font-bold">
-              Get a Quote
+              {mapComponent.quoteCalculatorTitle}
             </h2>
             <button
               className="h-max focus:outline-none"
@@ -177,6 +188,9 @@ export default function Header() {
               </svg>
             </button>
           </div>
+          {/* MapComponent already handles its own content from content.json,
+              so no direct changes needed here, just ensuring it's passed the necessary props if any,
+              or it imports content itself. Given the current structure, it likely imports it itself. */}
           <MapComponent />
         </div>
       </Transition>

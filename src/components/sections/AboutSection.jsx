@@ -1,25 +1,28 @@
 // src/components/sections/AboutSection.jsx
 import React from 'react';
+// Import the content.json file
+import content from '../../content.json'; // Adjust path based on your file structure
 
 export default function AboutSection() {
+  // Destructure the aboutSection content
+  const { aboutSection } = content;
+
   return (
     <section id="us" className="grid grid-cols-1 bg-black md:grid-cols-2">
       {/* Text Content */}
       <div className="flex flex-col justify-center p-8 text-white md:p-14">
+        {/* Use title from content.json */}
         <h2 className="mb-6 w-max border-b border-yellow-400 text-2xl md:mb-8 md:text-3xl">
-          Our Roots and Future...
+          {aboutSection.title}
         </h2>
         <div className="space-y-4 font-nunito text-base text-gray-300">
+          {/* Use paragraph1 from content.json */}
           <p>
-            With a strong foundation established in 2021, we bring a wealth of
-            experience to the courier industry. Our expertise allows us to
-            provide top-notch pickup and delivery solutions for a wide range of
-            clients.
+            {aboutSection.paragraph1}
           </p>
+          {/* Use paragraph2 from content.json */}
           <p>
-            Our business is committed to growth and expansion. As we look
-            forward, we seek new customers who value reliable and efficient
-            courier services.
+            {aboutSection.paragraph2}
           </p>
         </div>
       </div>
